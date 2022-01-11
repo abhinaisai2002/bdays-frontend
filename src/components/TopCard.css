@@ -1,0 +1,20 @@
+.topcard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #fff;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+.topcard:hover{
+    cursor: pointer;
+}
+.topcard img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem; 
+    border-radius: 50%;
+} 

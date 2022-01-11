@@ -1,0 +1,100 @@
+.card {
+  width: 100%;
+}
+
+.card header {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card header .header__first {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.card header .header__first .logo h2 {
+  color: #0093e9;
+}
+
+.card header .header__first .points {
+  display: flex;
+}
+
+.card header .header__first .points svg {
+  width: 25px;
+  margin-right: 0.5rem;
+  fill: #0093e9;
+}
+
+.card header .header__middle {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  /* border: 2px solid rgb(167, 167, 167); */
+}
+
+.card header .header__middle img {
+  border-radius: 50%;
+}
+
+.card header .header__last {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+
+#powByCom {
+  font-size: 13px;
+}
+
+.card footer {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card footer div:hover {
+  cursor: pointer;
+}
+.card footer div button:hover {
+  cursor: pointer;
+}
+.card footer div button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin: 0 1rem;
+  background: #fff;
+}
+
+.card footer div button svg {
+  width: 25px;
+  height: 25px;
+  fill: #0093e9;
+}
+
+.card footer div p {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+}

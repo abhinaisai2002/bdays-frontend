@@ -1,0 +1,16 @@
+/** @format */
+
+.home {
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+}
+
+.home a {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 18px;
+}
