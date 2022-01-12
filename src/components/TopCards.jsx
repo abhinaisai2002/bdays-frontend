@@ -9,13 +9,15 @@ const TopCards = () => {
     const [error,setError] = useState('');
 
     useEffect(()=>{
-        axios.get('http://localhost:5000/api/topcards')
-      .then((res) => {
-        setCards(res.data.cards);
-      })
-      .catch((err) => {
-        setError(err.response.data.message);
-      });
+        axios
+          .get('https://bdays-backend.herokuapp.com/api/topcards')
+          .then((res) => {
+            setCards(res.data.cards);
+          })
+          .catch((err) => {
+            console.log(err);
+            setError(err.response.data);
+          });
     },[])
 
     if (cards === []) return <p>No Upcomming BirthDays for now</p>

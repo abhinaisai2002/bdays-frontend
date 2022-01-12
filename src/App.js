@@ -6,7 +6,7 @@ import AddCard from './components/AddCard';
 import Card from './components/Card';
 import TopCards from './components/TopCards';
 
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (

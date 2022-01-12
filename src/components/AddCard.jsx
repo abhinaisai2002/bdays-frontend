@@ -1,6 +1,5 @@
 import axios from "axios";
 import React,{useRef} from "react";
-import { Redirect } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 import "./AddCard.css";
@@ -16,14 +15,18 @@ const AddCard = () => {
     const name = nameRef.current.value;
     const dob = dateRef.current.value;
     try{
-      await axios.post('http://localhost:5000/api/addcard',{
-        name:name,
-        dob:dob
-      },{
-        headers:{
-          'Content-Type':'application/json'
+      await axios.post(
+        'https://bdays-backend.herokuapp.com/api/addcard',
+        {
+          name: name,
+          dob: dob,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
         }
-      })
+      );
       history.replace('/');
     }catch(err){
       alert('Something went wrong.Please try again later.')
